@@ -5,7 +5,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
  
 // DB connection variables
-$host= "terraform-20250505165955580800000001.c74iaoqyw64r.us-east-2.rds.amazonaws.com";
+$host= "terraform-20250713042914717900000003.cpwyyk40g6y0.ap-south-1.rds.amazonaws.com:3306";
 $user = "admin";
 $pass = "ayaddala";
 $db= "testdb";
