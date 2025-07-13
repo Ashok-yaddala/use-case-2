@@ -35,6 +35,7 @@ jobs:
       uses: terraform-docs/gh-actions@main
       with:
         working-dir: .
+        git-push: true
         output-file: README.md
         output-method: inject
         config-file: disabled
