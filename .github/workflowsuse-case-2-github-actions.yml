@@ -17,6 +17,8 @@ jobs:
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v3
+      with:
+        refs: use-case-2
 
     - name: Configure AWS credentials via OIDC
       uses: aws-actions/configure-aws-credentials@v2
