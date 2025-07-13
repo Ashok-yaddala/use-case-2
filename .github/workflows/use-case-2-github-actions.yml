@@ -7,7 +7,7 @@ on:
 
 permissions:
   id-token: write  
-  contents: read   
+  contents: write   
 
 jobs:
   deploy:
@@ -38,9 +38,6 @@ jobs:
         git-push: true
         git-push-user-name: GitHub Actions
         git-push-user-email: actions@github.com
-      env:
-        GITHUB_TOKEN: ${{ secrets.GH_PAT }}
-        
         output-file: README.md
         output-method: inject
         config-file: disabled
@@ -49,7 +46,6 @@ jobs:
         recursive: false
         recursive-path: modules
         output-format: markdown table
-        output-template: <!-- BEGIN_TF_DOCS -->\n{{ .Content }}\n<!-- END_TF_DOCS -->"
         indention: 2
         git-commit-message: terraform-docs:automated action
         git-push-sign-off: false
